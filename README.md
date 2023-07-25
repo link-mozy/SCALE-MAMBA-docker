@@ -27,14 +27,29 @@ scale-mamba:1.0 bash
 
 ## How to run the project in Docker
 
-1. `SCALE-MAMBA-docker` repo 를 클론받는다.
+1. `SCALE-MAMBA-docker` repo를 클론받는다.
 
 ```bash
 git clone https://github.com/link-mozy/SCALE-MAMBA-docker.git
 ```
 
-2. `SCALE-MAMBA-docker` 프로젝트를 VS Code로 연다.
+2. `SCALE-MAMBA` repo를 클론받는다.
 
-3. `Ctrl / Cmd + Shift + P` 버튼을 누른뒤 `Dev Containers: Rebuild Container and Reopen in Container`를 실행한다.
+3. `Crt-Store`, `Data`, `Programs`를 `SCALE-MAMBA`에서 복사한다.
 
-4. 도커 컨테이너에서 프로젝트를 실행한다.
+```bash
+mkdir Cert-Store
+cp SCALE-MAMABA/Auto-Test-Data/Cert-Store/* ../Cert-Store/
+
+mkdir Data
+cp SCALE-MAMABA/Auto-Test-Data/1/* ../Data
+
+mkdir Programs
+cp SCALE-MAMABA/Programs/* ../Programs
+```
+
+4. `SCALE-MAMBA-docker` 프로젝트를 VS Code로 연다.
+
+5. `Ctrl / Cmd + Shift + P` 버튼을 누른뒤 `Dev Containers: Rebuild Container and Reopen in Container`를 실행한다.
+
+4. 도커 컨테이너에서 프로젝트 작업을 한다.
