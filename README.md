@@ -39,21 +39,17 @@ git clone https://github.com/link-mozy/SCALE-MAMBA-docker.git
 git clone https://github.com/KULeuven-COSIC/SCALE-MAMBA.git
 ```
 
-3. `Crt-Store`, `Data`, `Programs`를 `SCALE-MAMBA`에서 복사한다.
+3. `SCALE-MAMBA-docker` 프로젝트를 VS Code로 연다.
+
+4. `Ctrl / Cmd + Shift + P` 버튼을 누른뒤 `Dev Containers: Rebuild Container and Reopen in Container`를 실행한다.
+
+5. 도커 컨테이너에서 프로젝트 작업을 한다.
+
+> 도커 컨테이너에서 테스트 컴파일 예시:
 
 ```bash
-mkdir Cert-Store
-cp SCALE-MAMABA/Auto-Test-Data/Cert-Store/* ../Cert-Store/
-
-mkdir Data
-cp SCALE-MAMABA/Auto-Test-Data/1/* ../Data
-
-mkdir Programs
-cp SCALE-MAMABA/Programs/* ../Programs
+cd SCALE-MAMBA
+cp Auto-Test-Data/Cert-Store/* Cert-Store/
+cp Auto-Test-Data/1/* Data/
+./compile.sh ./Programs/test_fix_array
 ```
-
-4. `SCALE-MAMBA-docker` 프로젝트를 VS Code로 연다.
-
-5. `Ctrl / Cmd + Shift + P` 버튼을 누른뒤 `Dev Containers: Rebuild Container and Reopen in Container`를 실행한다.
-
-4. 도커 컨테이너에서 프로젝트 작업을 한다.
