@@ -35,6 +35,10 @@ git clone https://github.com/link-mozy/SCALE-MAMBA-docker.git
 
 2. `SCALE-MAMBA` repo를 클론받는다.
 
+```bash
+git clone https://github.com/KULeuven-COSIC/SCALE-MAMBA.git
+```
+
 3. `Crt-Store`, `Data`, `Programs`를 `SCALE-MAMBA`에서 복사한다.
 
 ```bash
